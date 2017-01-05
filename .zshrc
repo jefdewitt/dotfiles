@@ -86,9 +86,16 @@ source $ZSH/oh-my-zsh.sh
 
 _project_dir=$HOME/proj
 
+_gen_dev_notes="$_project_dir/general-dev-notes"
+_gen_dev_bash="$_gen_dev_notes/files/bash"
+
 # outputs dirs/files only in the first directory argument
 function onlyindir1 {
   diff -rubq $1 $2 | grep $1 | grep -E '^Only in*' | sed -n 's/[^:]*: //p'
+}
+
+function emdot-widget-replace {
+  $_gen_dev_bash/mobile-dev-build-and-replace-widget.sh $1
 }
 
 # docker
