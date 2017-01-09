@@ -37,7 +37,8 @@ _gen_dev_bash="$_gen_dev_notes/files/bash"
 # environments
   function nuke-local-env-mobile {
     $_dotfiles_scripts_dir/pre-nuke-local-env-mobile.sh
-    time $_gen_dev_bash/mobile-dev-env-from-scratch.sh
+    # TODO: fix this issue in the script itself, sub-shell to change working directory
+    (cd $_gen_dev_bash && time $_gen_dev_bash/mobile-dev-env-from-scratch.sh)
   }
 
 # project helpers
@@ -74,3 +75,5 @@ function code {
 # node-version-manager
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
+
+export DEV_PROJECTS_ROOT="$HOME/proj"
