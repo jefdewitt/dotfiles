@@ -107,10 +107,9 @@ function mobile-nuke-environment {
   $_gen_dev_bash/mobile-dev-env-from-scratch.sh
 }
 
-# docker
-# eval "$(docker-machine env default)"
-
-alias update-dotfiles="sh $_project_dir/dotfiles/update-dotfiles.sh"
+function update-dotfiles {
+  $_project_dir/dotfiles/update-dotfiles.sh
+}
 
 # z navigation
 . `brew --prefix`/etc/profile.d/z.sh
