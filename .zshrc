@@ -94,9 +94,17 @@ function onlyindir1 {
   diff -rubq $1 $2 | grep $1 | grep -E '^Only in*' | sed -n 's/[^:]*: //p'
 }
 
-# mobile widget dev helper 
+# mobile widget dev helper
 function emdot-widget-replace {
   $_gen_dev_bash/mobile-dev-build-and-replace-widget.sh $1
+}
+
+function desktop-widgets-replace {
+  $_gen_dev_bash/desktop-dev-build-and-replace-widgets.sh
+}
+
+function mobile-nuke-environment {
+  $_gen_dev_bash/mobile-dev-env-from-scratch.sh
 }
 
 # docker
