@@ -89,27 +89,33 @@ _project_dir=$HOME/proj
 _gen_dev_notes="$_project_dir/general-dev-notes"
 _gen_dev_bash="$_gen_dev_notes/files/bash"
 
-# outputs dirs/files only in the first directory argument
-function onlyindir1 {
-  diff -rubq $1 $2 | grep $1 | grep -E '^Only in*' | sed -n 's/[^:]*: //p'
-}
+# random tidbits
+  function dotfiles-update {
+    $_project_dir/dotfiles/update-dotfiles.sh
+  }
 
-# mobile widget dev helper
-function emdot-widget-replace {
-  $_gen_dev_bash/mobile-dev-build-and-replace-widget.sh $1
-}
+  # outputs dirs/files only in the first directory argument
+  function onlyindir1 {
+    diff -rubq $1 $2 | grep $1 | grep -E '^Only in*' | sed -n 's/[^:]*: //p'
+  }
 
-function desktop-widgets-replace {
-  $_gen_dev_bash/desktop-dev-build-and-replace-widgets.sh
-}
+# environment
+  function scorched-earth-mobile {
+    time $_gen_dev_bash/mobile-dev-env-from-scratch.sh
+  }
 
-function mobile-nuke-environment {
-  $_gen_dev_bash/mobile-dev-env-from-scratch.sh
-}
+# project helpers
 
-function update-dotfiles {
-  $_project_dir/dotfiles/update-dotfiles.sh
-}
+  # mobile
+  function widget-replace-emdot-single {
+    time $_gen_dev_bash/mobile-dev-build-and-replace-widget.sh $1
+  }
+
+  # desktop
+  function widget-replace-desktop-all {
+    time $_gen_dev_bash/desktop-dev-build-and-replace-widgets.sh
+  }
+
 
 # z navigation
 . `brew --prefix`/etc/profile.d/z.sh
