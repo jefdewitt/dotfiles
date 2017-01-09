@@ -19,6 +19,7 @@ plugins=(git zsh-syntax-highlighting z thefuck history history-substring-search 
 source $ZSH/oh-my-zsh.sh
 
 _project_dir=$HOME/proj
+_dotfiles_scripts_dir="$_project_dir/dotfiles/scripts"
 
 _gen_dev_notes="$_project_dir/general-dev-notes"
 _gen_dev_bash="$_gen_dev_notes/files/bash"
@@ -35,6 +36,7 @@ _gen_dev_bash="$_gen_dev_notes/files/bash"
 
 # environments
   function nuke-local-env-mobile {
+    $_dotfiles_scripts_dir/pre-nuke-local-env-mobile.sh
     time $_gen_dev_bash/mobile-dev-env-from-scratch.sh
   }
 
