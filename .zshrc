@@ -40,7 +40,7 @@ _gen_dev_bash="$_gen_dev_notes/files/bash"
 
 # environments
   function nuke-local-env-mobile {
-    $_dotfiles_scripts_dir/pre-nuke-local-env-mobile.sh
+    $_dotfiles_scripts_dir/mobile/pre-nuke-local-env.sh
     # TODO: fix this issue in the script itself, sub-shell to change working directory
     (cd $_gen_dev_bash && time $_gen_dev_bash/mobile-dev-env-from-scratch.sh)
   }
@@ -53,7 +53,11 @@ _gen_dev_bash="$_gen_dev_notes/files/bash"
   }
 
   function emdot-new-feature {
-    time $_project_dir/dotfiles/scripts/mobile-start-new-feature.sh $1 $2
+    time $_project_dir/dotfiles/scripts/mobile/start-new-feature.sh $1 $2
+  }
+
+  function emdot-update-feature-with-master {
+    time $_project_dir/dotfiles/scripts/mobile/update-feature-with-master.sh $1
   }
 
   # desktop
