@@ -29,6 +29,10 @@ _gen_dev_bash="$_gen_dev_notes/files/bash"
     $_project_dir/dotfiles/update-dotfiles.sh
   }
 
+  function dotfiles-install {
+    $_project_dir/dotfiles/install.sh
+  }
+
   # outputs dirs/files only in the first directory argument
   function onlyindir1 {
     diff -rubq $1 $2 | grep $1 | grep -E '^Only in*' | sed -n 's/[^:]*: //p'
@@ -48,12 +52,16 @@ _gen_dev_bash="$_gen_dev_notes/files/bash"
     time $_gen_dev_bash/mobile-dev-build-and-replace-widget.sh $1
   }
 
+  function emdot-new-feature {
+    time $_project_dir/dotfiles/scripts/mobile-start-new-feature.sh $1 $2
+  }
+
   # desktop
   function widget-replace-desktop-all {
     time $_gen_dev_bash/desktop-dev-build-and-replace-widgets.sh
   }
 
-  function widget-replace-desktop-singl {
+  function widget-replace-desktop-single {
     echo "Not a thing yet, maybe you should make it a thing."
   }
 
