@@ -18,20 +18,23 @@ plugins=(git zsh-syntax-highlighting z thefuck history history-substring-search 
 
 source $ZSH/oh-my-zsh.sh
 
-_project_dir=$HOME/proj
-_dotfiles_scripts_dir="$_project_dir/dotfiles/scripts"
+export DEV_PROJECTS_ROOT="$HOME/proj"
+${DEV_PROJECTS_ROOT:?"Need to set DEV_PROJECTS_ROOT"}
 
-_gen_dev_notes="$_project_dir/general-dev-notes"
+projects=$DEV_PROJECTS_ROOT
+dotfile_scripts="$projects/dotfiles/scripts"
+
+_gen_dev_notes="$projects/general-dev-notes"
 _gen_dev_bash="$_gen_dev_notes/files/bash"
 
 # random tidbits
   function dotfiles-update {
-    $_project_dir/dotfiles/install.sh
-    $_project_dir/dotfiles/update-dotfiles.sh
+    $projects/dotfiles/install.sh
+    $projects/dotfiles/update-dotfiles.sh
   }
 
   function dotfiles-install {
-    $_project_dir/dotfiles/install.sh
+    $projects/dotfiles/install.sh
   }
 
   # outputs dirs/files only in the first directory argument
@@ -41,29 +44,29 @@ _gen_dev_bash="$_gen_dev_notes/files/bash"
 
 # environments
   function nuke-local-env-mobile {
-    $_dotfiles_scripts_dir/mobile/pre-nuke-local-env.sh
+    $dotfile_scripts/mobile/pre-nuke-local-env.sh
     # TODO: fix this issue in the script itself, sub-shell to change working directory
-    (cd $_gen_dev_bash && time $_gen_dev_bash/mobile-dev-env-from-scratch.sh)
+    (cd $dotfile_scripts/mobile && time $dotfile_scripts/mobile/dev-env-from-scratch.sh)
   }
 
 # project helpers
 
   # mobile
   function widget-replace-emdot-single {
-    time $_gen_dev_bash/mobile-dev-build-and-replace-widget.sh $1
+    time $dotfile_scripts/mobile/build-and-replace-widget.sh $1
   }
 
   function emdot-new-feature {
-    time $_project_dir/dotfiles/scripts/mobile/start-new-feature.sh $1 $2
+    time $dotfile_scripts/mobile/start-new-feature.sh $1 $2
   }
 
   function emdot-update-feature-with-master {
-    time $_project_dir/dotfiles/scripts/mobile/update-feature-with-master.sh $1
+    time $dotfile_scripts/mobile/update-feature-with-master.sh $1
   }
 
   # desktop
   function widget-replace-desktop-all {
-    time $_gen_dev_bash/desktop-dev-build-and-replace-widgets.sh
+    time $dotfile_scripts/desktop/build-and-replace-widgets.sh
   }
 
   function widget-replace-desktop-single {
@@ -88,5 +91,3 @@ function code {
 # node-version-manager
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
-
-export DEV_PROJECTS_ROOT="$HOME/proj"
