@@ -9,6 +9,9 @@ mobile_dir="$DEV_PROJECTS_ROOT/mobile"
 echo "cleaning the tsui releases folder..."
 rm -Rf "$tsui_dir/widgets/releases/*"
 
+# build tsui
+$DEV_PROJECTS_ROOT/dotfiles/scripts/tsui/build.sh
+
 #copy the tsui project to the mobile project's tsuilib folder
 echo "copying tsui project to mobile's tsuilib folder..."
 cp -Rf "$tsui_dir/" "$mobile_dir/app/resources/shared/extlibs/tsuilib/"
