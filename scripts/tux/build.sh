@@ -35,4 +35,10 @@ fi
 #Finaly, build tux
 echo "Building tux ..."
 cd $tux_dir
-grunt build-all
+{
+  grunt build-all
+}
+{
+  npm install
+  grunt build-all
+}
