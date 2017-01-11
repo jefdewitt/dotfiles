@@ -26,6 +26,7 @@ _gen_dev_bash="$_gen_dev_notes/files/bash"
 
 # random tidbits
   function dotfiles-update {
+    $_project_dir/dotfiles/install.sh
     $_project_dir/dotfiles/update-dotfiles.sh
   }
 

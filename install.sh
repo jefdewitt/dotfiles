@@ -1,7 +1,8 @@
 #!/bin/sh
 
-project_dir=$HOME/proj/dotfiles
+${DEV_PROJECTS_ROOT:?"Need to set DEV_PROJECTS_ROOT"}
 
+project_dir=$DEV_PROJECTS_ROOT/dotfiles
 install_dir=$HOME
 
 echo "installing dotfiles"
