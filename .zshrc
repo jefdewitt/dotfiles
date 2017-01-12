@@ -34,6 +34,7 @@ _gen_dev_bash="$_gen_dev_notes/files/bash"
   function dotfiles-update {
     $projects/dotfiles/install.sh
     $projects/dotfiles/update-dotfiles.sh
+    zsh
   }
 
   function dotfiles-install {
