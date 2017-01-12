@@ -25,7 +25,8 @@ export DEV_PROJECTS_ROOT="$HOME/proj"
 # ${DEV_PROJECTS_ROOT:?"Need to set DEV_PROJECTS_ROOT"}
 
 projects=$DEV_PROJECTS_ROOT
-dotfile_scripts="$projects/dotfiles/scripts"
+dotfiles="$projects/dotfiles"
+dotfile_scripts="$projects/dotfiles/scripts/projects"
 
 _gen_dev_notes="$projects/general-dev-notes"
 _gen_dev_bash="$_gen_dev_notes/files/bash"

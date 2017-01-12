@@ -6,7 +6,7 @@ project_dir=$DEV_PROJECTS_ROOT/dotfiles
 
 cd $project_dir
 
-chmod -R +x .
+chmod -R +x scripts/
 
 git add -A
 git commit -m "Updated dotfiles."
