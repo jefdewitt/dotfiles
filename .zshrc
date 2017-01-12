@@ -69,6 +69,10 @@ _gen_dev_bash="$_gen_dev_notes/files/bash"
     time $dotfile_scripts/mobile/update-feature-with-master.sh $1
   }
 
+  function emdot-build-all {
+    time $dotfile_scripts/mobile/build-all.sh
+  }
+
   # desktop
   function widget-replace-desktop-all {
     time $dotfile_scripts/desktop/build-and-replace-widgets.sh
