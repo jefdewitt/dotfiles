@@ -32,7 +32,7 @@ _gen_dev_bash="$_gen_dev_notes/files/bash"
 
 # random tidbits
   function dotfiles-update {
-    # $projects/dotfiles/install.sh
+    $projects/dotfiles/install.sh
     $projects/dotfiles/update-dotfiles.sh
   }
 

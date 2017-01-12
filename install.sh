@@ -9,5 +9,3 @@ echo "installing dotfiles"
 cp $project_dir/.zshrc $install_dir/.zshrc
 
 echo "completed"
-
-zsh
