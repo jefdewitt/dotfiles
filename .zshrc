@@ -18,7 +18,6 @@ plugins=(git zsh-syntax-highlighting z thefuck history history-substring-search 
 
 source $ZSH/oh-my-zsh.sh
 
-
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export JAVA_HOME=$(/usr/libexec/java_home)
 
@@ -33,7 +32,7 @@ _gen_dev_bash="$_gen_dev_notes/files/bash"
 
 # random tidbits
   function dotfiles-update {
-    $projects/dotfiles/install.sh
+    # $projects/dotfiles/install.sh
     $projects/dotfiles/update-dotfiles.sh
   }
 
