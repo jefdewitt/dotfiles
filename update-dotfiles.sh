@@ -6,6 +6,8 @@ project_dir=$DEV_PROJECTS_ROOT/dotfiles
 
 cd $project_dir
 
+chmod -R +x .
+
 git add -A
 git commit -m "Updated dotfiles."
 git push origin master
