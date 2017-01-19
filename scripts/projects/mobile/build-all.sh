@@ -10,7 +10,15 @@ echo "cleaning the tsui releases folder..."
 rm -Rf "$tsui_dir/widgets/releases/*"
 
 # build tsui
-$DEV_PROJECTS_ROOT/dotfiles/scripts/tsui/build.sh
+
+if [ -n $1 ];
+then
+  if [ $1 = '-wd' ];
+  then
+    $DEV_PROJECTS_ROOT/dotfiles/scripts/tsui/build.sh
+  fi
+fi
+
 
 #copy the tsui project to the mobile project's tsuilib folder
 echo "copying tsui project to mobile's tsuilib folder..."

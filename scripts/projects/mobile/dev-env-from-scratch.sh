@@ -78,6 +78,7 @@ then
 
     echo "copying mobile dev altered vagrantfile into place"
     cd "${cwd}"
+
     altered_vagrantfile_location='../vagrant/Vagrantfile-mobile-dev'
     cp -f "$altered_vagrantfile_location" "$dev_vm_web_dir/Vagrantfile"
 

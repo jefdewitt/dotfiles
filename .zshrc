@@ -56,6 +56,21 @@ _gen_dev_bash="$_gen_dev_notes/files/bash"
 
 # project helpers
 
+  # builds 
+  function build-tsui {
+    if [ -n $1 ]; 
+    then 
+      if [$1 = '-f'];
+      then 
+        rm -rf $projects/tsui/widgets/node_modules
+        rm -rf $projects/tsui/app/node_modules
+        rm -rf $projects/tsui/core/node_modules
+      fi
+    fi 
+
+    time $dotfile_scripts/build.sh
+  }
+
   # mobile
   function widget-replace-emdot-single {
     time $dotfile_scripts/mobile/build-and-replace-widget.sh $1
@@ -70,7 +85,7 @@ _gen_dev_bash="$_gen_dev_notes/files/bash"
   }
 
   function emdot-build-all {
-    time $dotfile_scripts/mobile/build-all.sh
+    time $dotfile_scripts/mobile/build-all.sh $1
   }
 
   # desktop
