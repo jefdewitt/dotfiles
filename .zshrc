@@ -68,7 +68,7 @@ _gen_dev_bash="$_gen_dev_notes/files/bash"
       fi
     fi 
 
-    time $dotfile_scripts/build.sh
+    time $dotfile_scripts/tsui/build.sh
   }
 
   # mobile
