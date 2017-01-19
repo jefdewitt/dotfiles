@@ -58,13 +58,6 @@ _gen_dev_bash="$_gen_dev_notes/files/bash"
 
   # builds 
   function build-tsui {
-    if [ $1 = '-f' ];
-    then 
-      rm -rf $projects/tsui/widgets/node_modules
-      rm -rf $projects/tsui/app/node_modules
-      rm -rf $projects/tsui/core/node_modules
-    fi
-
     time $dotfile_scripts/tsui/build.sh
   }
 
