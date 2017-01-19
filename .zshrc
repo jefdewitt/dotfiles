@@ -49,7 +49,7 @@ _gen_dev_bash="$_gen_dev_notes/files/bash"
 
 # environments
   function nuke-local-env-mobile {
-    $dotfile_scripts/mobile/pre-nuke-local-env.sh
+    # $dotfile_scripts/mobile/pre-nuke-local-env.sh
     # TODO: fix this issue in the script itself, sub-shell to change working directory
     (cd $dotfile_scripts/mobile && time $dotfile_scripts/mobile/dev-env-from-scratch.sh)
   }
@@ -103,5 +103,7 @@ function code {
 }
 
 # node-version-manager
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+# export NVM_DIR="$HOME/.nvm"
+# . "/usr/local/opt/nvm/nvm.sh"
+
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
