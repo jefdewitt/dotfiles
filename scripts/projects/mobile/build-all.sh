@@ -15,7 +15,7 @@ if [ -n $1 ];
 then
   if [ $1 = '-wd' ];
   then
-    $DEV_PROJECTS_ROOT/dotfiles/scripts/tsui/build.sh
+    $DEV_PROJECTS_ROOT/dotfiles/projects/scripts/tsui/build.sh
   fi
 fi
 
