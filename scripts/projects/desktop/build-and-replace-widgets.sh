@@ -16,7 +16,7 @@ host_projects_root=$DEV_PROJECTS_ROOT
 tsui_dir="$DEV_PROJECTS_ROOT/tsui"
 dev_vm_dir="$DEV_PROJECTS_ROOT/dev_vm"
 
-vm_script_to_run="$DEV_PROJECTS_ROOT/dotfiles/scripts/desktop/vm-replace-widgets.sh"
+vm_script_to_run="$DEV_PROJECTS_ROOT/dotfiles/scripts/projects/desktop/vm-replace-widgets.sh"
 
 echo "building tsui on the host"
 cd "$tsui_dir"

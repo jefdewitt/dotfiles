@@ -17,6 +17,7 @@
 projects_root=/mnt/code
 
 tsui_dir="$projects_root/tsui"
+tsui_widgets_dir="$tsui_dir/widgets"
 whitelabel_dir="$projects_root/whiteLabel"
 
 echo "building whitelabel - classic"
@@ -28,5 +29,5 @@ cd "$whitelabel_dir/shared"
 make install
 
 echo "building tsui widgets"
-cd "$tsui_dir"
+cd "$tsui_widgets_dir"
 grunt deploy
