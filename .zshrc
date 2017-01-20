@@ -61,6 +61,10 @@ _gen_dev_bash="$_gen_dev_notes/files/bash"
     time $dotfile_scripts/tsui/build.sh
   }
 
+  function build-tux {
+    time $dotfile_scripts/tux/build.sh
+  }
+
   # mobile
   function widget-replace-emdot-single {
     time $dotfile_scripts/mobile/build-and-replace-widget.sh $1
