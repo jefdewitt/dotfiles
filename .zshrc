@@ -84,7 +84,7 @@ _gen_dev_bash="$_gen_dev_notes/files/bash"
 
   # desktop
   function widget-replace-desktop-all {
-    time $dotfile_scripts/desktop/build-and-replace-widgets.sh
+    time $dotfile_scripts/desktop/vm-build-and-replace-widgets.sh
   }
 
   function widget-replace-desktop-single {

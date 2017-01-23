@@ -18,9 +18,12 @@ project_scripts="$DEV_PROJECTS_ROOT/dotfiles/scripts/projects"
 vm_script_to_run="$project_scripts/desktop/vm-replace-widgets.sh"
 
 echo "building tsui on the host"
-$project_scripts/tsui/build.sh
+time $project_scripts/tsui/build.sh
 
-echo "Replacing widgets on the vm"
-$project_scripts/dev_vm/dev-vm-ssh-and-run-script.sh $vm_script_to_run
+echo "Building whitelabel on the vm"
+time $project_scripts/dev_vm/dev-vm-ssh-and-run-script.sh $project_scripts/whiteLabel/build-in-vm.sh
+
+echo "Deploying TSUI on the VM for desktop"
+time $project_scripts/dev_vm/dev-vm-ssh-and-run-script.sh $vm_script_to_run/tsui/deploy-in-vm.sh
 
 echo "All done, you should now see your changes on local desktop site!"
