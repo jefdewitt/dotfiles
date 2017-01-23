@@ -30,15 +30,16 @@ then
     echo "removing git repo files from tux/styleguide folder"
     rm -rf .git
     rm -rf .gitignore
+    npm install 
 fi
 
 #Finaly, build tux
 echo "Building tux ..."
 cd $tux_dir
 {
-  grunt build-all
+  grunt
 }
 {
   npm install
-  grunt build-all
+  grunt
 }
