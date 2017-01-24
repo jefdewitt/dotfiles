@@ -14,7 +14,7 @@ $scripts_directory/apps/mozilla-firefox/install.sh
 $scripts_directory/apps/n/install.sh
 $scripts_directory/apps/node-version-we-use/install.sh
 $scripts_directory/apps/grunt-cli/install.sh
-$scripts_directory/apps/xcode-tools/install.sh
+$scripts_directory/apps/xcode-command-line-tools/install.scpt
 $scripts_directory/apps/virtualbox/install.sh
 $scripts_directory/apps/vagrant/install.sh
 
