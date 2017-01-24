@@ -1,8 +1,12 @@
 # Dotfiles
 
 > This is my dotfile. There are many like, but this one is mine. 
+>
 > My dotfile is my best friend. It is my life, I must master it as I must master my life. 
+>
+> --<cite>Personally Altered [Rifleman's Creed][1] - </cite>
 
+[1]:https://en.wikipedia.org/wiki/Rifleman's_Creed
 Personal configurations, scripts and documentation, and [dotfiles](https://dotfiles.github.io/). The goal? Script all the things.
 
 ## Highlights 
