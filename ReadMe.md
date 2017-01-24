@@ -1,6 +1,9 @@
 # Dotfiles
 
-Personal configurations, scripts and documentation. The goal? Script all the things.
+> This is my dotfile. There are many like, but this one is mine. 
+> My dotfile is my best friend. It is my life, I must master it as I must master my life. 
+
+Personal configurations, scripts and documentation, and [dotfiles](https://dotfiles.github.io/). The goal? Script all the things.
 
 ## Highlights 
 
