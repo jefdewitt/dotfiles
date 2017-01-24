@@ -10,7 +10,7 @@ Personal configurations, scripts and documentation. The goal? Script all the thi
 ### Day-to-day 
 - [`Found something in a project that's highly manual and want to script away the problem for now?`](https://github.cdinteractive.com/cj-taylor/dotfiles/tree/master/scripts/projects)
     - Note: Try to solve the root problem after you apply a bandaid like this. 
-- [`Can't remember how you installed that one thing? Script it out for next time.`][https://github.cdinteractive.com/cj-taylor/dotfiles/tree/master/scripts/apps]
+- [`Can't remember how you installed that one thing? Script it out for next time.`](https://github.cdinteractive.com/cj-taylor/dotfiles/tree/master/scripts/apps)
 - [`Want to share a scripted workflow with future you or others?`](https://github.cdinteractive.com/cj-taylor/dotfiles/tree/master/scripts/workflows)
 
 ### Role-Specific Helpers 
