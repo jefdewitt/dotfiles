@@ -7,7 +7,7 @@
 > --<cite>Personally Altered [Rifleman's Creed][1] - </cite>
 
 [1]:https://en.wikipedia.org/wiki/Rifleman's_Creed
-Personal configurations, scripts and documentation, and [dotfiles](https://dotfiles.github.io/). The goal? Script all the things.
+Personal configurations, scripts, documentation, oh ... and [dotfiles](https://dotfiles.github.io/). The goal? Script all the things.
 
 ## Highlights 
 
