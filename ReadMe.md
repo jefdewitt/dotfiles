@@ -23,6 +23,17 @@ Personal configurations, scripts and documentation, and [dotfiles](https://dotfi
 ### Role-Specific Helpers 
 - [`Frontend Devs`](https://github.cdinteractive.com/cj-taylor/dotfiles/tree/master/scripts/workflows/frontend)
 
+### TODO: 
+- [ ] [`X Release has a problem in it. Pull X and build everything locally to replicate in the VM`]()
+- [x] [`Machine tooling (install nvm/n, grunt-cli globally)`](https://github.cdinteractive.com/cj-taylor/dotfiles/tree/master/scripts/apps) 
+- [x] [`scripts (get chrome/firefox)`](https://github.cdinteractive.com/cj-taylor/dotfiles/tree/master/scripts/apps) 
+- [ ] [`Watchers for individual projects`]()
+- [ ] [`Watchers on dependent projects (ex: tux watching for tsui changes)`]() 
+- [ ] [`npm package.json consolidation - no nested`]() 
+- [ ] [`npm package.json - explicit version pinning`]() 
+
+NOTE: don't use ng-components due to desktop not using ng 1.5 (can explicitly include via drupal if necessary; gross)
+
 ## Usage
 
 ### Get the goods 
