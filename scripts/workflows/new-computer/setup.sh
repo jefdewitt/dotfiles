@@ -27,6 +27,7 @@ git clone https://github.cdinteractive.com/twinspires/mobile.git
 git clone https://github.cdinteractive.com/twinspires/whiteLabel.git
 git clone https://github.cdinteractive.com/twinspires/Drupal_Adw.git
 
-# bootstrap the vm 
+# bootstrap the for development 
 $workflows_directory/new-computer/setup-host-file.sh
 $workflows_directory/new-computer/provision-and-start-vm-for-development.sh
+# $workflows_directory/new-computer/setup-android-dev-tooling.sh
