@@ -6,7 +6,7 @@ So, you have a fresh computer (replacement/new-hire) that you want to get setup 
 
 1. Clone this repo 
 2. Set an environment variable 
-    - `export DEV_PROJECT_HOME=$HOME/proj`
+    - `export DEV_PROJECTS_ROOT=$HOME/proj`
 3. Run the script 
     - `cd dotfiles`
     - `./scripts/workflows/new-computer/setup.sh`
