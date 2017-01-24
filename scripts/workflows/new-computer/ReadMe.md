@@ -1,6 +1,6 @@
 # New-Computer 
 
-So, you have a fresh computer that you want to get setup and ready for development. Manual works, but how about a scripted setup? 
+So, you have a fresh computer (replacement/new-hire) that you want to get setup and ready for development. Manual works, but how about a scripted setup? 
 
 ## How to use
 

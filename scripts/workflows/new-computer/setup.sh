@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# HOW TO USE: https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/new-computer/ReadMe.md
+
 ${DEV_PROJECTS_ROOT:?"Need to set DEV_PROJECTS_ROOT"}
 
 projects_directory="$DEV_PROJECTS_ROOT"
