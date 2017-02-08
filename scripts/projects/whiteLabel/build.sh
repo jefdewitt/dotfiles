@@ -16,7 +16,7 @@ host_projects_root=$DEV_PROJECTS_ROOT
 tsui_dir="$DEV_PROJECTS_ROOT/tsui"
 dev_vm_dir="$DEV_PROJECTS_ROOT/dev_vm"
 
-vm_script_to_run="$host_projects_root/dotfiles/scripts/whiteLabel/build-in-vm.sh"
+vm_script_to_run="$host_projects_root/dotfiles/scripts/projects/whiteLabel/build-in-vm.sh"
 
 echo "giving the vm the business"
 ssh vagrant@127.0.0.1 \
