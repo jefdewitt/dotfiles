@@ -24,6 +24,7 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export DEV_PROJECTS_ROOT="$HOME/proj"
 # ${DEV_PROJECTS_ROOT:?"Need to set DEV_PROJECTS_ROOT"}
 
+
 projects=$DEV_PROJECTS_ROOT
 dotfiles="$projects/dotfiles"
 dotfile_scripts="$projects/dotfiles/scripts/projects"
@@ -32,6 +33,10 @@ _gen_dev_notes="$projects/general-dev-notes"
 _gen_dev_bash="$_gen_dev_notes/files/bash"
 
 # random tidbits
+  function cdivagrant {
+    (cd $DEV_PROJECTS_ROOT/dev_vm/vagrant_web && CODE_LOCATION=$DEV_PROJECTS_ROOT vagrant $1)
+  }
+
   function dotfiles-update {
     $projects/dotfiles/install.sh
     $projects/dotfiles/update-dotfiles.sh
