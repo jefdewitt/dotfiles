@@ -20,14 +20,12 @@ source $ZSH/oh-my-zsh.sh
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export JAVA_HOME=$(/usr/libexec/java_home)
-
 export DEV_PROJECTS_ROOT="$HOME/proj"
-# ${DEV_PROJECTS_ROOT:?"Need to set DEV_PROJECTS_ROOT"}
-
 
 projects=$DEV_PROJECTS_ROOT
 dotfiles="$projects/dotfiles"
-dotfile_scripts="$projects/dotfiles/scripts/projects"
+dotfile_scripts="$dotfiles/scripts/projects"
+workflows="$dotfiles/scripts/workflows"
 
 _gen_dev_notes="$projects/general-dev-notes"
 _gen_dev_bash="$_gen_dev_notes/files/bash"
@@ -95,6 +93,9 @@ _gen_dev_bash="$_gen_dev_notes/files/bash"
   function widget-replace-desktop-single {
     echo "Not a thing yet, maybe you should make it a thing."
   }
+
+  # boss 
+  alias boss-dev=$workflows/frontend/start-boss-development.sh
 
 # z navigation
 . `brew --prefix`/etc/profile.d/z.sh
