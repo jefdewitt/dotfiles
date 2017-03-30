@@ -97,6 +97,8 @@ _gen_dev_bash="$_gen_dev_notes/files/bash"
   # boss 
   alias boss-dev=$workflows/frontend/start-boss-development.sh
 
+  alias new-reg-dev-vm-replace=$dotfile_scripts/new-registration/replace-in-vm.sh
+
 # z navigation
 . `brew --prefix`/etc/profile.d/z.sh
 
