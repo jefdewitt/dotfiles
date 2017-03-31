@@ -7,6 +7,9 @@ project_scripts="$DEV_PROJECTS_ROOT/dotfiles/scripts/projects"
 code_location='/mnt/code/cdux-registration/dist/'
 http_location='/nas/whiteLabel/webroot/php/newreg/'
 https_location='/nas/whiteLabel/webroot-sec/php/newreg/'
+log_directory='/nas/whiteLabel/logs/registration'
+
+$project_scripts/dev_vm/dev-vm-ssh-and-run-command.sh "sudo -i bash -c 'mkdir -p $log_directory && chmod 755 -R $log_directory* && chown netserve.common -R $log_directory && ls -ltr $log_directory'" 
 
 # remove contents / copy dist to http location / change perms / change owner 
 $project_scripts/dev_vm/dev-vm-ssh-and-run-command.sh "sudo -i bash -c 'rm -Rf $http_location && mkdir -p $http_location && cp -Rf $code_location* $http_location && chmod 755 -R $http_location* && chown netserve.common -R $http_location* && ls -ltr $http_location'"
