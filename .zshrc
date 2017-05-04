@@ -30,6 +30,8 @@ workflows="$dotfiles/scripts/workflows"
 _gen_dev_notes="$projects/general-dev-notes"
 _gen_dev_bash="$_gen_dev_notes/files/bash"
 
+source $dotfiles/.env-personal
+
 # random tidbits
   function cdivagrant {
     (cd $DEV_PROJECTS_ROOT/dev_vm/vagrant_web && CODE_LOCATION=$DEV_PROJECTS_ROOT vagrant $1)
