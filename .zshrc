@@ -31,6 +31,7 @@ _gen_dev_notes="$projects/general-dev-notes"
 _gen_dev_bash="$_gen_dev_notes/files/bash"
 
 source $dotfiles/.env-personal
+source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # random tidbits
   function cdivagrant {
