@@ -18,10 +18,10 @@
 #### Phase 1 - [Diagram](https://www.lucidchart.com/invitations/accept/bfcec8fb-5bbd-4480-bd14-d6f12df2c8c2) 
 - Simple shell-scripts to mimic the end goal to jump-start the conversation on what tooling we leverage for this effort 
     - Todo
-      - [X] Step 2.1.1 [status script](https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/github/spike-status-checks/phase1/step2-1-1.sh) and commit - initial commit
-      - [X] Step 2.1.2 [status script](https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/github/spike-status-checks/phase1/step2-1-2.sh) and commit - build failure 
-      - [X] Step 2.2.1 [status script](https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/github/spike-status-checks/phase1/step2-2-1.sh) and commit - build fixed, tests fail 
-      - [X] Step 2.3.1 [status script](https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/github/spike-status-checks/phase1/step2-3-1.sh) and commit - build success, tests success, approval pending 
+      - [X] Step 2.1.1 [status script](https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/github/spike-status-checks/phase1/step2-1-1.sh) and commit, [image]()https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/github/spike-status-checks/phase1/step-2-1-1.png - initial commit
+      - [X] Step 2.1.2 [status script](https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/github/spike-status-checks/phase1/step2-1-2.sh) and commit, [image](https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/github/spike-status-checks/phase1/step-2-1-2.png) - build failure 
+      - [X] Step 2.2.1 [status script](https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/github/spike-status-checks/phase1/step2-2-1.sh) and commit, [image](https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/github/spike-status-checks/phase1/step-2-2-1.png) - build fixed, tests fail 
+      - [X] Step 2.3.1 [status script](https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/github/spike-status-checks/phase1/step2-3-1.sh) and commit, [image](https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/github/spike-status-checks/phase1/step-2-3-1.png) - build success, tests success, approval pending 
       - Await SME Approval  
       - SME Appoved 
       - Merged 
