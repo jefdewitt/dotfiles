@@ -18,13 +18,14 @@
 #### Phase 1 - [Diagram](https://www.lucidchart.com/invitations/accept/bfcec8fb-5bbd-4480-bd14-d6f12df2c8c2) 
 - Simple shell-scripts to mimic the end goal to jump-start the conversation on what tooling we leverage for this effort 
     - Todo
-      - [X] Step 2.1.1 [status script](https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/github/spike-status-checks/phase1/step2-1-1.sh) and commit, [image]()https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/github/spike-status-checks/phase1/step-2-1-1.png - initial commit
+      - [X] Step 2.1.1 [status script](https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/github/spike-status-checks/phase1/step2-1-1.sh) and commit, [image](https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/github/spike-status-checks/phase1/step-2-1-1.png) - initial commit
       - [X] Step 2.1.2 [status script](https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/github/spike-status-checks/phase1/step2-1-2.sh) and commit, [image](https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/github/spike-status-checks/phase1/step-2-1-2.png) - build failure 
       - [X] Step 2.2.1 [status script](https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/github/spike-status-checks/phase1/step2-2-1.sh) and commit, [image](https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/github/spike-status-checks/phase1/step-2-2-1.png) - build fixed, tests fail 
       - [X] Step 2.3.1 [status script](https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/github/spike-status-checks/phase1/step2-3-1.sh) and commit, [image](https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/github/spike-status-checks/phase1/step-2-3-1.png) - build success, tests success, approval pending 
       - Await SME Approval  
       - SME Appoved 
       - Merged 
+- Phase 1 completed via https://github.cdinteractive.com/cj-taylor/tsui/pull/4
       
 #### Phase 2 
 - Explore existing tools and what it'd take for us to leverage them for this purpose 
@@ -42,7 +43,7 @@
  
 TSUI is a dependency used within mobile, tux, and desktop - where much churn occurs. 
 It's a ripe target to amplify feedback to the developers before their changes land in the branches used for deployment purposes.
-This can mitigate mitigate delayed feedback and swarming reactions when many people are notified of build-on-deploy-time-issues when the dev could have self-error-corrected at the pull-request stage of contribution.
+This can mitigate delayed feedback and swarming reactions when many people are notified of build-on-deploy-time-issues when the dev could have self-error-corrected at the pull-request stage of contribution.
 
 ### Is this practice limited to TSUI?
  
