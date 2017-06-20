@@ -5,7 +5,7 @@
 ### The "why"
 
 - Amplify and shorten feedback loops to developers - crucial as we continue to pursue shortening our path through the value-stream
-- Create "tunable" surface area for architects to uphold and increase quality (test coverage in proposed code, rather than in the mainline)
+- Create "tunable" surface area for architects to uphold and increase quality (test coverage in proposed code, rather than in the mainline as it's attempting to go out the door)
 - Ensure we are always in a shippable state by vetting all pull-requests before they get into the "mainline" in a transparent way
 - Cross-office collaboration can be eased by having a source of truth of "does that commit or pull-request meet these expectations before it gets to a human"
 
@@ -28,7 +28,14 @@
 - Phase 1 completed via https://github.cdinteractive.com/cj-taylor/tsui/pull/4
       
 #### Phase 2 
+- **Note:** Scope and depth of this and subsequent phases are subject to input from conversations from phase1 results. Awaiting feedback and blessing from architects to continue R&D.
 - Explore existing tools and what it'd take for us to leverage them for this purpose 
+    - Preliminatary research before execution of phase2
+      - TeamCity: 
+        - https://github.com/jonnyzzz/TeamCity.GitHub
+      - Jenkins: 
+        - https://github.com/jenkinsci/github-plugin
+        - https://github.com/jenkinsci/pipeline-githubnotify-step-plugin
 - Document for comparison for the necessary stakeholders to come to an agreement 
 
 #### Phase 3 
