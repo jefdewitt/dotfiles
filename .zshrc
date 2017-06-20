@@ -102,6 +102,8 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 
   alias new-reg-dev-vm-replace=$dotfile_scripts/new-registration/replace-in-vm.sh
 
+  alias git-rm-merged-branchs=git branch --merged master --no-color | grep -v master | grep -v stable | xargs git branch -d
+
 # z navigation
 . `brew --prefix`/etc/profile.d/z.sh
 
