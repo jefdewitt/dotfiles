@@ -32,5 +32,5 @@ export PATH=$ANDROID_HOME/platform-tools:$PATH
 export PATH=$ANDROID_HOME/build-tools/19.1.0:$PATH
 
 # Install tools 
-$DEV_PROJECTS_ROOT/dotfiles/scripts/apps/intel-haxm/install.sh
-$DEV_PROJECTS_ROOT/dotfiles/scripts/apps/android-studio/install.sh
+"$DEV_PROJECTS_ROOT"/dotfiles/scripts/apps/intel-haxm/install.sh
+"$DEV_PROJECTS_ROOT"/dotfiles/scripts/apps/android-studio/install.sh
