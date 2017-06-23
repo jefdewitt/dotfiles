@@ -25,12 +25,12 @@ mkdir -p "$projects_directory"
 
 # get the repos 
 cd "$projects_directory"
-git clone production https://github.cdinteractive.com/twinspires/dev_vm.git
-git clone production https://github.cdinteractive.com/twinspires/tsui.git
-git clone production https://github.cdinteractive.com/twinspires/tux.git
-git clone production https://github.cdinteractive.com/twinspires/mobile.git
-git clone production https://github.cdinteractive.com/twinspires/whiteLabel.git
-git clone production https://github.cdinteractive.com/twinspires/Drupal_Adw.git
+git clone -b production https://github.cdinteractive.com/twinspires/dev_vm.git
+git clone -b production https://github.cdinteractive.com/twinspires/tsui.git
+git clone -b production https://github.cdinteractive.com/twinspires/tux.git
+git clone -b production https://github.cdinteractive.com/twinspires/mobile.git
+git clone -b production https://github.cdinteractive.com/twinspires/whiteLabel.git
+git clone -b production https://github.cdinteractive.com/twinspires/Drupal_Adw.git
 
 # bootstrap the for development 
 "$workflows_directory"/new-computer/setup-host-file.sh

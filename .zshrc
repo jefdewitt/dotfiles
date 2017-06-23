@@ -62,6 +62,11 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # project helpers
 
+  # dev_vm
+  function vm-ssh {
+    cd "$projects"/cdi/frontend/dev_vm/vagrant_web && vagrant ssh
+  }
+
   # builds 
   function build-tsui {
     time $dotfile_scripts/tsui/build.sh
