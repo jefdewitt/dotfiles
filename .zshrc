@@ -67,7 +67,7 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
     cd "$projects"/cdi/frontend/dev_vm/vagrant_web && vagrant ssh
   }
 
-  # builds 
+  # builds
   function build-tsui {
     time $dotfile_scripts/tsui/build.sh
   }
@@ -102,7 +102,7 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
     echo "Not a thing yet, maybe you should make it a thing."
   }
 
-  # boss 
+  # boss
   alias boss-dev=$workflows/frontend/start-boss-development.sh
 
   alias new-reg-dev-vm-replace=$dotfile_scripts/new-registration/replace-in-vm.sh
