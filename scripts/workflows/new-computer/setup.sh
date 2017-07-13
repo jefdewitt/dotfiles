@@ -31,6 +31,8 @@ git clone -b production https://github.cdinteractive.com/twinspires/tux.git
 git clone -b production https://github.cdinteractive.com/twinspires/mobile.git
 git clone -b production https://github.cdinteractive.com/twinspires/whiteLabel.git
 git clone -b production https://github.cdinteractive.com/twinspires/Drupal_Adw.git
+git clone -b production https://github.cdinteractive.com/twinspires/cdux-ng.git
+git clone -b production https://github.cdinteractive.com/twinspires/cdux-races.git
 
 # bootstrap the for development 
 "$workflows_directory"/new-computer/setup-host-file.sh
