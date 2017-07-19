@@ -7,7 +7,7 @@
 # you're doing.
 
 def host_machine_code_location()
-  return ENV["CODE_LOCATION"] || "~/Proj"
+  return ENV["CODE_LOCATION"] || "~/proj"
 end
 
 Vagrant.configure(2) do |config|
