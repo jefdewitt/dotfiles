@@ -28,7 +28,7 @@ cd "$projects_directory"
 git clone -b production https://github.cdinteractive.com/twinspires/dev_vm.git
 git clone -b production https://github.cdinteractive.com/twinspires/tsui.git
 git clone -b production https://github.cdinteractive.com/twinspires/tux.git
-git clone -b production https://github.cdinteractive.com/twinspires/mobile.git
+git clone -b production https://github.cdinteractive.com/twinspires/cdux-mobile.git
 git clone -b production https://github.cdinteractive.com/twinspires/whiteLabel.git
 git clone -b production https://github.cdinteractive.com/twinspires/Drupal_Adw.git
 git clone -b production https://github.cdinteractive.com/twinspires/cdux-ng.git
