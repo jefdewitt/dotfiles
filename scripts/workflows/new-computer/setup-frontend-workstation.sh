@@ -11,11 +11,11 @@ workflows_directory="$DEV_PROJECTS_ROOT/dotfiles/scripts/workflows"
 # make our projects directory if it doesn't exist
 mkdir -p "$projects_directory"
 
+"$workflows_directory"/new-computer/setup-churchill-basics.sh
+
 # install development tooling
 "$scripts_directory"/apps/homebrew/install.sh
 "$scripts_directory"/apps/intellij-idea/install.sh
-"$scripts_directory"/apps/google-chrome/install.sh
-"$scripts_directory"/apps/mozilla-firefox/install.sh
 "$scripts_directory"/apps/n/install.sh
 "$scripts_directory"/apps/node-version-we-use/install.sh
 "$scripts_directory"/apps/grunt-cli/install.sh
