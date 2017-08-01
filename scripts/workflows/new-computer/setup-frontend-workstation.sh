@@ -8,10 +8,10 @@ projects_directory="$DEV_PROJECTS_ROOT"
 scripts_directory="$DEV_PROJECTS_ROOT/dotfiles/scripts"
 workflows_directory="$DEV_PROJECTS_ROOT/dotfiles/scripts/workflows"
 
-# make our projects directory if it doesn't exist 
+# make our projects directory if it doesn't exist
 mkdir -p "$projects_directory"
 
-# install development tooling 
+# install development tooling
 "$scripts_directory"/apps/homebrew/install.sh
 "$scripts_directory"/apps/intellij-idea/install.sh
 "$scripts_directory"/apps/google-chrome/install.sh
@@ -22,8 +22,9 @@ mkdir -p "$projects_directory"
 "$scripts_directory"/apps/xcode-command-line-tools/install.scpt
 "$scripts_directory"/apps/virtualbox/install.sh
 "$scripts_directory"/apps/vagrant/install.sh
+"$scripts_directory"/apps/postman/install.sh
 
-# get the repos 
+# get the repos
 cd "$projects_directory"
 git clone -b production https://github.cdinteractive.com/twinspires/dev_vm.git
 git clone -b production https://github.cdinteractive.com/twinspires/tsui.git
@@ -34,7 +35,7 @@ git clone -b production https://github.cdinteractive.com/twinspires/Drupal_Adw.g
 git clone -b production https://github.cdinteractive.com/twinspires/cdux-ng.git
 git clone -b production https://github.cdinteractive.com/twinspires/cdux-races.git
 
-# bootstrap the for development 
+# bootstrap the for development
 "$workflows_directory"/new-computer/setup-host-file.sh
 "$workflows_directory"/new-computer/provision-and-start-vm-for-development.sh
 # $workflows_directory/new-computer/setup-android-dev-tooling.sh
