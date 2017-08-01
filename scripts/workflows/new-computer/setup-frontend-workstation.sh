@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 # HOW TO USE: https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/new-computer/ReadMe.md
 
@@ -14,26 +14,47 @@ mkdir -p "$projects_directory"
 "$workflows_directory"/new-computer/setup-churchill-basics.sh
 
 # install development tooling
-"$scripts_directory"/apps/homebrew/install.sh
-"$scripts_directory"/apps/intellij-idea/install.sh
-"$scripts_directory"/apps/n/install.sh
-"$scripts_directory"/apps/node-version-we-use/install.sh
-"$scripts_directory"/apps/grunt-cli/install.sh
-"$scripts_directory"/apps/xcode-command-line-tools/install.scpt
-"$scripts_directory"/apps/virtualbox/install.sh
-"$scripts_directory"/apps/vagrant/install.sh
-"$scripts_directory"/apps/postman/install.sh
+declare -a apps=(
+    "intellij-idea"
+    "n"
+    "node-version-we-use"
+    "grunt-cli"
+    "xcode-command-line-tools"
+    "virtualbox"
+    "vagrant"
+    "postman"
+)
+
+for app in "${apps[@]}"
+do
+    echo "Installing: $app"
+    sh "$scripts_directory"/apps/"$app"/install.sh || {
+        echo "Failed to install: $app"
+    }
+done
 
 # get the repos
+mkdir -p "$projects_directory"
 cd "$projects_directory"
-git clone -b production https://github.cdinteractive.com/twinspires/dev_vm.git
-git clone -b production https://github.cdinteractive.com/twinspires/tsui.git
-git clone -b production https://github.cdinteractive.com/twinspires/tux.git
-git clone -b production https://github.cdinteractive.com/twinspires/cdux-mobile.git
-git clone -b production https://github.cdinteractive.com/twinspires/whiteLabel.git
-git clone -b production https://github.cdinteractive.com/twinspires/Drupal_Adw.git
-git clone -b production https://github.cdinteractive.com/twinspires/cdux-ng.git
-git clone -b production https://github.cdinteractive.com/twinspires/cdux-races.git
+
+declare -a repos=(
+    "twinspires/dev_vm"
+    "twinspires/tsui"
+    "twinspires/tux"
+    "twinspires/cdux-mobile"
+    "twinspires/whiteLabel"
+    "twinspires/Drupal_Adw"
+    "twinspires/cdux-ng"
+    "twinspires/cdux-races"
+)
+
+for repo in "${repos[@]}"
+do
+    echo "Clonnig: $repo"
+    git clone -b production https://github.cdinteractive.com/"$repo".git|| {
+        echo "Failed to clone: $app"
+    }
+done
 
 # bootstrap the for development
 "$workflows_directory"/new-computer/setup-host-file.sh
