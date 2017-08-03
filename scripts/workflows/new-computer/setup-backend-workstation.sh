@@ -15,6 +15,7 @@ declare -a apps=(
     "intellij-idea"
     "java"
     "postman"
+    "mysql-workbench"
 )
 
 for app in "${apps[@]}"
