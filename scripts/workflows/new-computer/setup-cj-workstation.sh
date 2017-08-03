@@ -14,6 +14,9 @@ declare -a apps=(
     "pip"
     "thefuck"
     "virtualenv"
+    "rvm"
+    "oh-my-zsh-navigation"
+    "oh-my-zsh-syntax-highlighting"
 )
 
 for app in "${apps[@]}"
