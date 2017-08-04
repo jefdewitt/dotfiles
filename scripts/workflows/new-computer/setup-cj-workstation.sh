@@ -17,6 +17,7 @@ declare -a apps=(
     "rvm"
     "oh-my-zsh-navigation"
     "oh-my-zsh-syntax-highlighting"
+    "shellcheck"
 )
 
 for app in "${apps[@]}"
