@@ -23,19 +23,8 @@ declare -a apps=(
     "virtualbox"
     "vagrant"
     "postman"
+    "filezilla"
 )
-
-for app in "${apps[@]}"
-do
-    echo "Installing: $app"
-    sh "$scripts_directory"/apps/"$app"/install.sh || {
-        echo "Failed to install: $app"
-    }
-done
-
-# get the repos
-mkdir -p "$projects_directory"
-cd "$projects_directory"
 
 declare -a repos=(
     "twinspires/dev_vm"
@@ -48,6 +37,15 @@ declare -a repos=(
     "twinspires/cdux-races"
 )
 
+for app in "${apps[@]}"
+do
+    echo "Installing: $app"
+    sh "$scripts_directory"/apps/"$app"/install.sh || {
+        echo "Failed to install: $app"
+    }
+done
+
+cd "$projects_directory"
 for repo in "${repos[@]}"
 do
     echo "Clonnig: $repo"
@@ -59,4 +57,3 @@ done
 # bootstrap the for development
 "$workflows_directory"/new-computer/setup-host-file.sh
 "$workflows_directory"/new-computer/provision-and-start-vm-for-development.sh
-# $workflows_directory/new-computer/setup-android-dev-tooling.sh
