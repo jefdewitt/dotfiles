@@ -20,6 +20,7 @@ declare -a apps=(
     "oh-my-zsh-syntax-highlighting"
     "shellcheck"
     "slack"
+    "shiftit"
 )
 
 for app in "${apps[@]}"
