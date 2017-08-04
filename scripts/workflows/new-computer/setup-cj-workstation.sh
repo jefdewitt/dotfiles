@@ -4,6 +4,7 @@ scripts_directory="$DEV_PROJECTS_ROOT/dotfiles/scripts"
 workflows_directory="$DEV_PROJECTS_ROOT/dotfiles/scripts/workflows"
 
 "$workflows_directory"/new-computer/setup-frontend-workstation.sh
+"$workflows_directory"/new-computer/setup-backend-workstation.sh
 "$workflows_directory"/new-computer/setup-devops-workstation.sh
 
 declare -a apps=(
