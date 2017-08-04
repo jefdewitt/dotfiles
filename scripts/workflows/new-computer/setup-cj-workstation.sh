@@ -19,6 +19,7 @@ declare -a apps=(
     "oh-my-zsh-navigation"
     "oh-my-zsh-syntax-highlighting"
     "shellcheck"
+    "slack"
 )
 
 for app in "${apps[@]}"

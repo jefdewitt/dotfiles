@@ -14,6 +14,7 @@ mkdir -p "$projects_directory"
 declare -a apps=(
     "sdkman"
     "docker"
+    "slack"
 )
 
 for app in "${apps[@]}"
