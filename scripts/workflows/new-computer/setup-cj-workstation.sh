@@ -21,6 +21,7 @@ declare -a apps=(
     "shellcheck"
     "slack"
     "shiftit"
+    "flux"
 )
 
 for app in "${apps[@]}"
