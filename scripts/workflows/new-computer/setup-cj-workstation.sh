@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-scripts_directory="$DEV_PROJECTS_ROOT/dotfiles/scripts"
-workflows_directory="$DEV_PROJECTS_ROOT/dotfiles/scripts/workflows"
+dotfiles_directory="$DEV_PROJECTS_ROOT/dotfiles"
+scripts_directory="$dotfiles_directory/scripts"
+workflows_directory="$scripts_directory/workflows"
 
 "$workflows_directory"/new-computer/setup-frontend-workstation.sh
 "$workflows_directory"/new-computer/setup-backend-workstation.sh
@@ -32,3 +33,7 @@ do
         echo "Failed to install: $app"
     }
 done
+
+"$dotfiles_directory"/install.sh
+
+zsh
