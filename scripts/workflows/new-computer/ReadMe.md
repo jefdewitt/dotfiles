@@ -32,9 +32,9 @@ Or, would you like to wire up your computer like [`CJ?`](#how-to-use---cj)
     - `export DEV_PROJECTS_ROOT=$HOME/proj`
 3. Run the script
     - `cd dotfiles`
-    - `./scripts/workflows/new-computer/setup-Backend-workstation.sh`
+    - `./scripts/workflows/new-computer/setup-backend-workstation.sh`
 4. Grab coffee and wait
-    - While you wait, want to know what it does? [Look here](https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/new-computer/setup-Backend-workstation.sh)
+    - While you wait, want to know what it does? [Look here](https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/new-computer/setup-backend-workstation.sh)
 5. Start developing on your new digs
 
 ## How to use - Designers
