@@ -27,6 +27,7 @@ declare -a apps=(
     "vagrant-manager"
     "kitematic"
     "caffeine"
+    "spotify"
 )
 
 for app in "${apps[@]}"
