@@ -28,6 +28,7 @@ declare -a apps=(
     "kitematic"
     "caffeine"
     "spotify"
+    "datagrip"
 )
 
 for app in "${apps[@]}"
