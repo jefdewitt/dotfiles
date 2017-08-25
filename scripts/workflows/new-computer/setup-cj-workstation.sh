@@ -29,6 +29,8 @@ declare -a apps=(
     "caffeine"
     "spotify"
     "datagrip"
+    "dotnet-core-cli"
+    "dotnet-core-sdk"
 )
 
 for app in "${apps[@]}"
