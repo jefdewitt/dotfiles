@@ -29,7 +29,7 @@ declare -a apps=(
 declare -a repos=(
     "twinspires/dev_vm"
     "twinspires/tsui"
-    "twinspires/tux"
+    "twinspires/cdux-tux"
     "twinspires/cdux-mobile"
     "twinspires/whiteLabel"
     "twinspires/Drupal_Adw"
@@ -48,7 +48,7 @@ done
 cd "$projects_directory"
 for repo in "${repos[@]}"
 do
-    echo "Clonnig: $repo"
+    echo "Cloning: $repo"
     git clone -b production https://github.cdinteractive.com/"$repo".git|| {
         echo "Failed to clone: $app"
     }
