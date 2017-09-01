@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 # HOW TO USE: https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/new-computer/ReadMe.md
 
@@ -12,15 +12,29 @@ workflows_directory="$DEV_PROJECTS_ROOT/dotfiles/scripts/workflows"
 mkdir -p "$projects_directory"
 
 "$workflows_directory"/new-computer/setup-churchill-basics.sh
-"$workflows_directory"/new-computer/setup-frontend-workstation.sh
 
+# install development tooling
 declare -a apps=(
-    "brackets"
-    "boxSync"
+    "intellij-idea"
+    "n"
+    "node-version-we-use"
+    "grunt-cli"
+    "xcode-command-line-tools"
+    "virtualbox"
+    "vagrant"
+    "postman"
+    "filezilla"
 )
 
 declare -a repos=(
-    "twinspires/cdux-mint-julep"
+    "twinspires/dev_vm"
+    "twinspires/tsui"
+    "twinspires/tux"
+    "twinspires/cdux-mobile"
+    "twinspires/whiteLabel"
+    "twinspires/Drupal_Adw"
+    "twinspires/cdux-ng"
+    "twinspires/cdux-races"
 )
 
 for app in "${apps[@]}"
@@ -31,7 +45,6 @@ do
     }
 done
 
-# get the repos
 cd "$projects_directory"
 for repo in "${repos[@]}"
 do
@@ -40,3 +53,7 @@ do
         echo "Failed to clone: $app"
     }
 done
+
+# bootstrap the for development
+"$workflows_directory"/new-computer/setup-host-file.sh
+"$workflows_directory"/new-computer/provision-and-start-vm-for-development.sh

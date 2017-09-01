@@ -22,6 +22,8 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 export JAVA_HOME=$(/usr/libexec/java_home)
 export DEV_PROJECTS_ROOT="$HOME/proj"
 
+[[ ":$PATH:" != *":$DEV_PROJECTS_ROOT/tools:"* ]] && PATH="$DEV_PROJECTS_ROOT/tools:${PATH}"
+
 projects=$DEV_PROJECTS_ROOT
 dotfiles="$projects/dotfiles"
 dotfile_scripts="$dotfiles/scripts/projects"
@@ -30,8 +32,8 @@ workflows="$dotfiles/scripts/workflows"
 _gen_dev_notes="$projects/general-dev-notes"
 _gen_dev_bash="$_gen_dev_notes/files/bash"
 
+source ~/.profile
 source $dotfiles/.env-personal
-source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # random tidbits
   function cdivagrant {
@@ -127,5 +129,7 @@ function code {
 # node-version-manager
 # export NVM_DIR="$HOME/.nvm"
 # . "/usr/local/opt/nvm/nvm.sh"
+
+
 
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).

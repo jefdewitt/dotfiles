@@ -1,20 +1,17 @@
 #!/usr/bin/env bash
 
+# HOW TO USE: https://github.cdinteractive.com/cj-taylor/dotfiles/blob/master/scripts/workflows/new-computer/ReadMe.md
+
 ${DEV_PROJECTS_ROOT:?"Need to set DEV_PROJECTS_ROOT"}
 
-projects_directory="$DEV_PROJECTS_ROOT"
 scripts_directory="$DEV_PROJECTS_ROOT/dotfiles/scripts"
-workflows_directory="$DEV_PROJECTS_ROOT/dotfiles/scripts/workflows"
-
-# make our projects directory if it doesn't exist
-mkdir -p "$projects_directory"
-
-"$workflows_directory"/new-computer/setup-churchill-basics.sh
 
 declare -a apps=(
-    "sdkman"
-    "docker"
-    "slack"
+    "homebrew"
+    "flowdock"
+    "joinme"
+    "google-chrome"
+    "mozilla-firefox"
 )
 
 for app in "${apps[@]}"

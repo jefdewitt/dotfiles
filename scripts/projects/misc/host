@@ -8,7 +8,6 @@
 255.255.255.255	broadcasthost
 ::1             localhost
 
-
 #==== ITE
 #10.20.4.200    www.betharness.com            #ITE
 #10.20.4.200    www.myracebet.com             #ITE
@@ -17,13 +16,13 @@
 #10.20.4.200    www.keenelandselect.com       #ITE
 #10.20.4.200    www.twinspires.com            #ITE
 #10.20.4.200    local.twinspires.com            #ITE
-10.20.4.200    ite.twinspires.com            #ITE
-10.20.4.205    mi.twinspires.com             #ITE
+#10.20.4.200    ite.twinspires.com            #ITE
+#10.20.4.205    mi.twinspires.com             #ITE
 #10.20.4.200    www.capitalotbbet.com         #ITE
-10.20.4.202    swslib.twinspires.com         #ITE
-10.20.4.8      bonus.twinspires.com          #ITE
-10.20.4.206    www.brisdataservices.com      #ITE
-10.20.4.215    ecom.brisdataservices.com     #ITE
+#10.20.4.202    swslib.twinspires.com         #ITE
+#10.20.4.8      bonus.twinspires.com          #ITE
+#10.20.4.206    www.brisdataservices.com      #ITE
+#10.20.4.215    ecom.brisdataservices.com     #ITE
 #====
 
 #==== ITE-CHG
@@ -72,9 +71,7 @@
 #====
 
 #==== VAGRANT
-192.168.33.10     ml.twinspires.com #VAGRANT
 192.168.33.10     local.twinspires.com #VAGRANT
-192.168.33.10    www.twinspires.com www.keenelandselect.com www.capitalotbbet.com www.oaklawnanywhere.com www.betharness.com www.racelinebet.com www.myracebet.com www.brisnet.com #VAGRANT
+#192.168.33.10     www.twinspires.com www.keenelandselect.com www.capitalotbbet.com www.oaklawnanywhere.com www.betharness.com www.racelinebet.com www.myracebet.com www.brisnet.com #VAGRANT
+192.168.33.10     ml-cloud.twinspires.com ml-cloud.keenelandselect.com ml-cloud.capitalotbbet.com ml-cloud.oaklawnanywhere.com
 #====
-
-#10.20.4.60     mi.twinspires.com            #ITE universal login, you must specifically uncomment this if you want to use it.
